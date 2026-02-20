@@ -1122,3 +1122,528 @@
     </div>
   </body>
 </html>
+
+<!-- soal 16 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 16</title>
+    <style>
+      .majalah {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 30px;
+        background: #f0f0f0;
+      }
+      .artikel.featured {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .artikel.wide {
+        grid-column: 1 / -1;
+      }
+      .artikel {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .artikel img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .artikel h2,
+      p {
+        padding: 0 16px;
+      }
+      h2 {
+        font-size: 16px;
+        margin: 12px 0 6px;
+      }
+      p {
+        font-size: 13px;
+        color: #666;
+      }
+      .artikel.featured img {
+        height: 280px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="majalah">
+      <article class="artikel featured">
+        <img src="https://picsum.photos/seed/m1/600/400" alt="" />
+        <h2>Artikel Utama: Revolusi AI di 2026</h2>
+        <p>
+          Kecerdasan buatan semakin mengubah cara kita bekerja dan belajar
+          setiap harinya.
+        </p>
+      </article>
+      <article class="artikel">
+        <img src="https://picsum.photos/seed/m2/300/200" alt="" />
+        <h2>Berita Teknologi</h2>
+        <p>Update terbaru dari dunia teknologi dan inovasi digital global.</p>
+      </article>
+      <article class="artikel">
+        <img src="https://picsum.photos/seed/m3/300/200" alt="" />
+        <h2>Tips Produktivitas</h2>
+        <p>
+          Cara efektif mengatur waktu dan meningkatkan produktivitas harian
+          Anda.
+        </p>
+      </article>
+      <article class="artikel wide">
+        <img src="https://picsum.photos/seed/m4/600/200" alt="" />
+        <h2>Laporan Khusus: Industri Kreatif Indonesia</h2>
+        <p>
+          Menelusuri pertumbuhan ekonomi kreatif dan potensi yang belum
+          tereksplor.
+        </p>
+      </article>
+      <article class="artikel">
+        <img src="https://picsum.photos/seed/m5/300/200" alt="" />
+        <h2>Review Gadget</h2>
+        <p>Ulasan mendalam produk teknologi terbaru untuk Anda.</p>
+      </article>
+    </div>
+  </body>
+</html>
+
+<!-- soal 17 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 17</title>
+    <style>
+      .overlay-modal {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-kotak {
+        background: white;
+        border-radius: 12px;
+        padding: 32px;
+        max-width: 480px;
+        width: 90%;
+        position: relative;
+      }
+      .modal-tutup {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn-konfirmasi {
+        padding: 10px 24px;
+        background: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .tooltip-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      .tooltip {
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: #2c3e50;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 13px;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      .tooltip-wrapper:hover {
+        .tooltip {
+          opacity: 1;
+        }
+      }
+      .tooltip::after {
+        content: " ↗";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid transparent;
+        border-top-color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div class="halaman-konten">
+        <h1>Halaman Utama</h1>
+        <p>Ini adalah konten halaman biasa.</p>
+
+        <div class="tooltip-wrapper">
+          <button class="btn-info">Hover untuk Info ℹ️</button>
+          <div class="tooltip">Ini adalah teks tooltip yang informatif!</div>
+        </div>
+
+        <button
+          class="btn-buka-modal"
+          onclick="document.getElementById('modal').style.display = 'flex'"
+        >
+          Buka Modal
+        </button>
+      </div>
+
+      <div class="overlay-modal" id="modal" style="display: none">
+        <div class="modal-kotak">
+          <button
+            class="modal-tutup"
+            onclick="document.getElementById('modal').style.display = 'none'"
+          >
+            ✕
+          </button>
+          <h2>Judul Modal</h2>
+          <p>
+            Ini adalah isi dari modal dialog. Konten di belakang modal harus
+            terlihat teredup.
+          </p>
+          <button class="btn-konfirmasi">Konfirmasi</button>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
+
+<!-- soal 18 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 18</title>
+    <style>
+      body {
+        margin: 0;
+        padding-top: 60px;
+      }
+      .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #2c3e50;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        z-index: 100;
+      }
+      .layout-artikel {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        gap: 40px;
+      }
+      .toc {
+        position: sticky;
+        top: 80px;
+        width: 220px;
+        flex-shrink: 0;
+        align-self: flex-start;
+        background: #f8f8f8;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .isi-artikel {
+        flex: 1;
+        min-width: 0;
+      }
+      .tombol-atas {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #e44d26;
+        color: white;
+        padding: 12px 16px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 99;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <header class="fixed-header">
+        <span>📚 Portal Belajar</span>
+      </header>
+
+      <div class="layout-artikel">
+        <aside class="toc">
+          <h3>Daftar Isi</h3>
+          <ul>
+            <li><a href="#bab1">1. Pengenalan</a></li>
+            <li><a href="#bab2">2. Konsep Dasar</a></li>
+            <li><a href="#bab3">3. Implementasi</a></li>
+            <li><a href="#bab4">4. Kesimpulan</a></li>
+          </ul>
+        </aside>
+
+        <article class="isi-artikel">
+          <h1 id="bab1">1. Pengenalan</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+
+          <h2 id="bab2">2. Konsep Dasar</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+
+          <h2 id="bab3">3. Implementasi</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+
+          <h2 id="bab4">4. Kesimpulan</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+        </article>
+      </div>
+
+      <a href="#" class="tombol-atas">↑ Atas</a>
+    </body>
+  </body>
+</html>
+
+<!-- soal 19 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 19</title>
+    <style>
+      .header-reps {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        background: #2c3e50;
+        color: white;
+        gap: 12px;
+      }
+      .nav-resp {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+      }
+      .kartu-resp-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+      }
+      .kartu-resp {
+        background: steelblue;
+        color: white;
+        padding: 24px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      @media screen and (min-width: 600px) {
+        .header-reps {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .nav-resp {
+          flex-direction: row;
+          gap: 20px;
+        }
+        .kartu-resp-wrapper {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .header-resp {
+          padding: 0 48px;
+          height: 64px;
+        }
+        .kartu-resp-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+          padding: 30px 48px;
+        }
+        .main-resp {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-resp">
+      <div class="brand">MyApp</div>
+      <nav class="nav-resp">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main class="main-resp">
+      <section class="konten-resp">
+        <h1>Responsive Design</h1>
+        <p>Halaman ini berubah layout tergantung ukuran layar.</p>
+      </section>
+      <section class="kartu-resp-wrapper">
+        <div class="kartu-resp">Kartu 1</div>
+        <div class="kartu-resp">Kartu 2</div>
+        <div class="kartu-resp">Kartu 3</div>
+        <div class="kartu-resp">Kartu 4</div>
+        <div class="kartu-resp">Kartu 5</div>
+        <div class="kartu-resp">Kartu 6</div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- soal 20 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 20</title>
+    <style>
+      .app-layout {
+        display: flex;
+        height: 400px;
+        gap: 16px;
+        padding: 20px;
+        background: #f0f0f0;
+      }
+      .sidebar-kiri {
+        flex: 0 0 200px;
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .konten-tengah {
+        flex: 1 1 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .sidebar-kanan {
+        flex: 0 1 160px;
+        background: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .progress-bar-demo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 20px;
+      }
+      .progress-label {
+        flex: 0 0 80px;
+        font-weight: bold;
+      }
+      .progress-track {
+        flex: 1;
+        height: 12px;
+        background: #ddd;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .progress-fill {
+        height: 100%;
+        width: var(--persen);
+        background: linear-gradient(to right, #27ae60, #2ecc71);
+        border-radius: 6px;
+      }
+      .progress-persen {
+        flex: 0 0 40px;
+        font-size: 13px;
+        color: #555;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar-kiri">
+        <h3>Sidebar Kiri</h3>
+        <p>Navigasi utama aplikasi.</p>
+      </aside>
+      <main class="konten-tengah">
+        <h2>Konten Utama</h2>
+        <p>Area ini harus mengambil seluruh sisa ruang yang tersedia.</p>
+      </main>
+      <aside class="sidebar-kanan">
+        <h3>Sidebar Kanan</h3>
+        <p>Widget dan informasi tambahan.</p>
+      </aside>
+    </div>
+
+    <hr />
+
+    <div class="progress-bar-demo">
+      <div class="progress-label">JavaScript</div>
+      <div class="progress-track">
+        <div class="progress-fill" style="--persen: 85%"></div>
+      </div>
+      <div class="progress-persen">85%</div>
+    </div>
+    <div class="progress-bar-demo">
+      <div class="progress-label">CSS</div>
+      <div class="progress-track">
+        <div class="progress-fill" style="--persen: 92%"></div>
+      </div>
+      <div class="progress-persen">92%</div>
+    </div>
+  </body>
+</html>
