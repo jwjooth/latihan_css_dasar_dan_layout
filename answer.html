@@ -1,0 +1,266 @@
+<!-- soal 1 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 1</title>
+    <style>
+      #konten {
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      p {
+        font-size: 16px;
+        color: gray;
+      }
+      #konten p:hover {
+        color: navy;
+      }
+      .teks {
+        font-weight: bold;
+      }
+      #paragraf-utama {
+        color: crimson;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="konten" class="wrapper">
+      <p class="teks" id="paragraf-utama">Teks Satu</p>
+      <p class="teks">Teks Dua</p>
+      <p>Teks Tiga</p>
+    </div>
+  </body>
+</html>
+
+<!-- soal 2 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 2</title>
+    <style>
+      .kartu {
+        width: 300px;
+        padding: 20px;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        margin: 30px auto;
+        box-sizing: border-box;
+      }
+      .judul-kartu {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .harga {
+        display: block;
+        font-size: 18px;
+        color: #e44d26;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kartu">
+      <h2 class="judul-kartu">Produk Unggulan</h2>
+      <p class="deskripsi">Deskripsi singkat produk ini.</p>
+      <span class="harga">Rp 150.000</span>
+    </div>
+  </body>
+</html>
+
+<!-- soal 3 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 3</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      a[target="_blank"] {
+        color: steelblue;
+      }
+      a::after {
+        content: " ↗";
+      }
+      a[href^="mailto:"] {
+        color: green;
+      }
+      nav > ul > li {
+        padding: 8px 0;
+      }
+      span + ul {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      ul li > ul > li {
+        padding-left: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/home">Beranda</a></li>
+        <li><a href="/about">Tentang</a></li>
+        <li><a href="https://github.com/user" target="_blank">GitHub</a></li>
+        <li><a href="mailto:admin@mail.com">Email Admin</a></li>
+        <li>
+          <span>Dropdown</span>
+          <ul>
+            <li><a href="/sub1">Sub Menu 1</a></li>
+            <li><a href="/sub2">Sub Menu 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+<!-- soal 4 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 4</title>
+    <style>
+      article {
+        max-width: 680px;
+        margin: 40px auto;
+        font-family: "Merriweather", "Georgia", serif, serif;
+      }
+      h1 {
+        font-size: 32px;
+        color: #1a1a1a;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 22px;
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 6px;
+      }
+      .meta {
+        font-size: 13px;
+        color: #888;
+        font-style: italic;
+      }
+      p {
+        line-height: 1.8;
+        color: #444;
+      }
+      blockquote {
+        border-left: 4px solid #e44d26;
+        padding-left: 20px;
+        margin: 24px 0;
+        font-size: 18px;
+        color: #555;
+        font-style: italic;
+      }
+      .meta strong {
+        color: #333;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Judul Artikel Utama</h1>
+      <p class="meta">
+        Ditulis oleh <strong>Andi Saputra</strong> · 20 Februari 2026
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore.
+      </p>
+      <blockquote>
+        "Belajar CSS adalah investasi terbaik untuk seorang web developer."
+      </blockquote>
+      <p>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae.
+      </p>
+      <h2>Sub Judul Bagian</h2>
+      <p>Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum.</p>
+    </article>
+  </body>
+</html>
+
+<!-- soal 5 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 5</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100vh;
+        background-color: #1a1a2e;
+        background:
+          linear-gradient(rgba(26, 26, 46, 0.85), rgba(22, 33, 62, 0.85)),
+          url("https://picsum.photos/1920/1080");
+        background-size: cover;
+        background-position: center;
+      }
+      .hero-konten {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+      .hero h1 {
+        color: white;
+        font-size: 48px;
+      }
+      .tombol {
+        display: inline-block;
+        padding: 12px 32px;
+        background: #e44d26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .fitur {
+        background-color: #f8f8f8;
+        padding: 40px;
+      }
+      .fitur-item {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        display: inline-block;
+        width: calc(33.333% - 20px);
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <section class="hero">
+        <div class="hero-konten">
+          <h1>Selamat Datang</h1>
+          <p>Temukan pengalaman terbaik bersama kami.</p>
+          <a href="#" class="tombol">Mulai Sekarang</a>
+        </div>
+      </section>
+      <section class="fitur">
+        <div class="fitur-item">Fitur 1</div>
+        <div class="fitur-item">Fitur 2</div>
+        <div class="fitur-item">Fitur 3</div>
+      </section>
+    </body>
+  </body>
+</html>
