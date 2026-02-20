@@ -715,3 +715,410 @@
     </div>
   </body>
 </html>
+
+<!-- soal 11 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 11</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .header-utama {
+        height: 4rem;
+        background: #2c3e50;
+        width: 100%;
+      }
+      .hero-section {
+        height: 80vh;
+        background: #ecf0f1;
+      }
+      .hero-section h1 {
+        font-size: 3rem;
+      }
+      .hero-section .tagline {
+        font-size: 1.25rem;
+      }
+      .konten-utama {
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .info-box {
+        font-size: 18px;
+      }
+      .teks-normal {
+        font-size: 1em;
+      }
+      .teks-besar {
+        font-size: 1.5em;
+      }
+      .teks-kecil {
+        font-size: 0.75em;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-utama">
+      <nav class="nav-bar">
+        <span class="logo">BelajarCSS</span>
+        <ul class="nav-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Kelas</a></li>
+          <li><a href="#">Tentang</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="konten-utama">
+      <section class="hero-section">
+        <h1>Belajar Web dengan Benar</h1>
+        <p class="tagline">Mulai perjalanan Anda hari ini.</p>
+      </section>
+      <section class="info-box">
+        <p class="teks-normal">Ini adalah teks dengan ukuran normal.</p>
+        <p class="teks-besar">
+          Ini adalah teks yang lebih besar dari induknya.
+        </p>
+        <p class="teks-kecil">
+          Ini adalah teks yang lebih kecil dari induknya.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- soal 12 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 12</title>
+    <style>
+      @layer base, komponen, utilitas;
+
+      @layer base {
+        .btn {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .card {
+          background: white;
+          border-radius: 8px;
+          padding: 20px;
+        }
+        .card-title {
+          color: navy;
+        }
+      }
+      @layer komponen {
+        .card-title {
+          color: crimson;
+          font-size: 20px;
+        }
+        .card {
+          background: #f5f5f5;
+        }
+        .btn {
+          background: gray;
+          color: black;
+        }
+      }
+      @layer utilitas {
+        .btn-primary {
+          background: steelblue;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2 class="card-title">Judul Kartu</h2>
+      <p class="card-body">Isi dari kartu ini.</p>
+      <button class="btn btn-primary">Tombol Utama</button>
+    </div>
+  </body>
+</html>
+
+<!-- soal 13 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 13</title>
+    <style>
+      .navbar {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        background: white;
+        padding: 0 48px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .navbar-menu {
+        margin: auto;
+      }
+      .navbar-menu a {
+        padding: 0 16px;
+        color: #555;
+        text-decoration: none;
+        font-size: 15px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+      }
+      .navbar-menu a:hover {
+        color: #e44d26;
+      }
+      .logo-teks {
+        font-size: 22px;
+        font-weight: 800;
+        color: #2c3e50;
+      }
+      .navbar-aksi {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .btn-masuk {
+        padding: 8px 20px;
+        color: #555;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .btn-daftar {
+        padding: 8px 20px;
+        background: #e44d26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      @media screen and (min-width: 768px) {
+        .navbar-menu {
+          display: none;
+        }
+        .navbar-brand {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-brand">
+        <span class="logo-teks">DevAcademy</span>
+      </div>
+      <nav class="navbar-menu">
+        <a href="#">Beranda</a>
+        <a href="#">Kelas</a>
+        <a href="#">Mentor</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="navbar-aksi">
+        <a href="#" class="btn-masuk">Masuk</a>
+        <a href="#" class="btn-daftar">Daftar Gratis</a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<!-- soal 14 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 14</title>
+    <style>
+      .kartu-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        padding: 0 40px;
+      }
+      .kartu-fitur {
+        flex: 1 1 220px;
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+      }
+      .kartu-link {
+        margin-top: auto;
+        display: inline-block;
+        padding: 8px 16px;
+        background: #e44d26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+        align-self: flex-start;
+      }
+      .kartu-fitur {
+        background: white;
+        border-radius: 12px;
+        padding: 28px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      }
+      .kartu-ikon {
+        size: 48px;
+        font-size: 32px;
+        margin-bottom: 16px;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 0, 0, 10px;
+        color: #2c3e50;
+      }
+      p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="fitur-section">
+      <h2 class="section-title">Fitur Unggulan</h2>
+      <div class="kartu-container">
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">🎓</div>
+          <h3>Belajar Fleksibel</h3>
+          <p>
+            Akses materi kapan saja dan di mana saja sesuai jadwal Anda tanpa
+            batas waktu.
+          </p>
+          <a href="#" class="kartu-link">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">👨‍💻</div>
+          <h3>Mentor Berpengalaman</h3>
+          <p>
+            Dibimbing oleh praktisi industri yang aktif bekerja di perusahaan
+            teknologi terkemuka di Indonesia.
+          </p>
+          <a href="#" class="kartu-link">Lihat Mentor</a>
+        </div>
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">🏆</div>
+          <h3>Sertifikat Resmi</h3>
+          <p>Dapatkan sertifikat.</p>
+          <a href="#" class="kartu-link">Info Sertifikat</a>
+        </div>
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">💬</div>
+          <h3>Komunitas Aktif</h3>
+          <p>
+            Bergabung dengan ribuan pelajar aktif, diskusi, dan bantu satu sama
+            lain dalam forum eksklusif.
+          </p>
+          <a href="#" class="kartu-link">Gabung Komunitas</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- soal 15 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 15</title>
+    <style>
+      .dashboard {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        grid-template-rows: 64px 1fr 50px;
+        grid-template-areas:
+          "header header"
+          "sidebar konten"
+          "footer footer";
+        min-height: 100vh;
+      }
+      .db-header {
+        grid-area: header;
+        background: #2c3e50;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .db-sidebar {
+        grid-area: sidebar;
+        background: #34495e;
+        color: white;
+        padding: 20px;
+      }
+      .db-sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .db-sidebar li {
+        padding: 10px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .db-sidebar li :hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .db-footer {
+        grid-area: footer;
+        background: #2c3e50;
+        color: #aaa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+      }
+      .db-konten {
+        background: #ecf0f1;
+        padding: 24px;
+      }
+      .db-konten .widget {
+        grid: repeat(2, 1fr);
+        gap: 16px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="db-header">Header Dashboard</header>
+      <aside class="db-sidebar">
+        <nav>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="db-konten">
+        <div class="widget">Widget A</div>
+        <div class="widget">Widget B</div>
+        <div class="widget">Widget C</div>
+        <div class="widget">Widget D</div>
+      </main>
+      <footer class="db-footer">Footer Dashboard</footer>
+    </div>
+  </body>
+</html>
