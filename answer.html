@@ -264,3 +264,454 @@
     </body>
   </body>
 </html>
+
+<!-- soal 6 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 6</title>
+    <style>
+      .daftar-artikel {
+        list-style: none;
+        padding: 0;
+        margin: 40px auto;
+        max-width: 500px;
+      }
+      li {
+        border-bottom: 1px solid #eee;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+      li:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+      a {
+        display: block;
+        padding: 14px 16px;
+        color: #333;
+        text-decoration: none;
+        transition: 0.2 ease;
+      }
+      a::before {
+        content: "▶ ";
+        color: #e44d26;
+      }
+      a:hover {
+        background: #fff3f0;
+        color: #e44d26;
+      }
+      a:focus {
+        outline: 2px solid steelblue;
+        outline-offset: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="daftar-artikel">
+      <li><a href="#">Cara Belajar CSS dengan Efektif</a></li>
+      <li><a href="#">Memahami Box Model Secara Mendalam</a></li>
+      <li><a href="#">Flexbox vs Grid: Kapan Menggunakan Keduanya</a></li>
+      <li><a href="#">Membuat Responsive Layout dengan Media Query</a></li>
+      <li><a href="#">Tips dan Trik CSS untuk Pemula</a></li>
+    </ul>
+  </body>
+</html>
+
+<!-- soal 7 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 7</title>
+    <style>
+      .form-registrasi {
+        max-width: 420px;
+        margin: 50px auto;
+        padding: 32px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      .form-grup {
+        margin-bottom: 16px;
+      }
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #555;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 15px;
+        box-sizing: border-box;
+        outline: none;
+      }
+      input,
+      select :focus {
+        border: 2px solid #4a90e2;
+        box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+      }
+      input:valid:not(:placeholder-shown) {
+        border: #27ae60;
+      }
+      input:invalid:not(:placeholder-shown) {
+        border: #e74c3c;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #357abd;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-registrasi">
+      <h2>Daftar Akun Baru</h2>
+
+      <div class="form-grup">
+        <label for="nama">Nama Lengkap</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama lengkap"
+          required
+          minlength="3"
+        />
+      </div>
+
+      <div class="form-grup">
+        <label for="email">Alamat Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="contoh@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-grup">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Minimal 8 karakter"
+          required
+          minlength="8"
+        />
+      </div>
+
+      <div class="form-grup">
+        <label for="peran">Peran</label>
+        <select id="peran" name="peran">
+          <option value="">-- Pilih Peran --</option>
+          <option value="mahasiswa">Mahasiswa</option>
+          <option value="dosen">Dosen</option>
+        </select>
+      </div>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </body>
+</html>
+
+<!-- soal 8 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 8</title>
+    <style>
+      .tabel-wrapper {
+        max-width: 700px;
+        margin: 40px auto;
+        overflow-x: auto;
+      }
+      .tabel-nilai {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px, 16px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      thead tr {
+        background-color: #2c3e50;
+        color: white;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+      tbody tr:hover {
+        background-color: #fff3cd;
+        transition: 0.15s;
+      }
+      td:last-child,
+      th:last-child {
+        text-align: center;
+      }
+      .grade-a {
+        color: #27ae60;
+        font-weight: bold;
+      }
+      .grade-d {
+        color: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabel-wrapper">
+      <h3>Laporan Nilai Mahasiswa</h3>
+      <table class="tabel-nilai">
+        <thead>
+          <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Mata Kuliah</th>
+            <th>Nilai UTS</th>
+            <th>Nilai UAS</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A001</td>
+            <td>Andi</td>
+            <td>CSS Dasar</td>
+            <td>85</td>
+            <td>90</td>
+            <td class="grade-a">A</td>
+          </tr>
+          <tr>
+            <td>A002</td>
+            <td>Bela</td>
+            <td>CSS Dasar</td>
+            <td>70</td>
+            <td>75</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>A003</td>
+            <td>Candra</td>
+            <td>CSS Dasar</td>
+            <td>60</td>
+            <td>65</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>A004</td>
+            <td>Dini</td>
+            <td>CSS Dasar</td>
+            <td>90</td>
+            <td>88</td>
+            <td class="grade-a">A</td>
+          </tr>
+          <tr>
+            <td>A005</td>
+            <td>Eka</td>
+            <td>CSS Dasar</td>
+            <td>55</td>
+            <td>58</td>
+            <td class="grade-d">D</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<!-- soal 9 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 9</title>
+    <style>
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      /* Reset bab */
+      .daftar-bab {
+        counter-reset: bab;
+      }
+
+      /* Increment bab */
+      .daftar-bab > li {
+        counter-increment: bab;
+        font-size: 17px;
+        margin-bottom: 16px;
+      }
+
+      /* Tampilkan bab */
+      .daftar-bab > li::before {
+        content: "Bab " counter(bab) " -- ";
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      /* Reset sub tiap bab */
+      .daftar-sub {
+        counter-reset: sub;
+      }
+
+      /* Increment sub */
+      .daftar-sub > li {
+        counter-increment: sub;
+        padding-left: 20px;
+        font-size: 15px;
+        color: #555;
+        margin-top: 6px;
+      }
+
+      /* Tampilkan bab.sub */
+      .daftar-sub > li::before {
+        content: counter(bab) "." counter(sub) " ";
+        font-weight: bold;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dokumentasi">
+      <h1>Panduan Instalasi</h1>
+      <ul class="daftar-bab">
+        <li>
+          Persiapan Sistem
+          <ul class="daftar-sub">
+            <li>Install Node.js</li>
+            <li>Install Git</li>
+            <li>Install VS Code</li>
+          </ul>
+        </li>
+        <li>
+          Konfigurasi Proyek
+          <ul class="daftar-sub">
+            <li>Buat folder proyek</li>
+            <li>Inisialisasi npm</li>
+          </ul>
+        </li>
+        <li>
+          Menjalankan Aplikasi
+          <ul class="daftar-sub">
+            <li>Jalankan server development</li>
+            <li>Buka browser</li>
+            <li>Verifikasi tampilan</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- soal 10 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 10</title>
+    <style>
+      .galeri {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        background: #1a1a1a;
+      }
+      .item-galeri {
+        display: inline-block;
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+        margin: 8px;
+        border-radius: 8px;
+      }
+      .item-galeri img {
+        display: block;
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 0.4s ease;
+      }
+      .overlay {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: 0.4s ease;
+        display: flex;
+      }
+      .item-galeri:hover {
+        img {
+          filter: grayscale(0%);
+          transform: scale(1.05);
+        }
+        .overlay {
+          opacity: 1;
+        }
+      }
+      .overlay p {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="galeri">
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/a/300/200" alt="Gambar 1" />
+        <div class="overlay">
+          <p>Foto Pertama</p>
+        </div>
+      </div>
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/b/300/200" alt="Gambar 2" />
+        <div class="overlay">
+          <p>Foto Kedua</p>
+        </div>
+      </div>
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/c/300/200" alt="Gambar 3" />
+        <div class="overlay">
+          <p>Foto Ketiga</p>
+        </div>
+      </div>
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/d/300/200" alt="Gambar 4" />
+        <div class="overlay">
+          <p>Foto Keempat</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
