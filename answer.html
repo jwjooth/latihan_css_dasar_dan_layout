@@ -1647,3 +1647,293 @@
     </div>
   </body>
 </html>
+
+<!-- soal 21 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 21</title>
+    <style>
+      .galeri-produk {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 24px;
+        padding: 30px;
+      }
+      .produk-item {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transform: 0.2s;
+        box-shadow: 0.2s;
+      }
+      .produk-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+      .produk-item img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .produk-info {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .produk-info h3 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+      .harga-produk {
+        color: #e44d26;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0 0 12px;
+      }
+      .produk-info button {
+        margin-top: auto;
+        padding: 10px;
+        width: 100%;
+        background: #2c3e50;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .produk-info button:hover {
+        background: #34495e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="galeri-produk">
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p1/280/200" alt="Produk 1" />
+        <div class="produk-info">
+          <h3>Produk Alpha</h3>
+          <p class="harga-produk">Rp 250.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p2/280/200" alt="Produk 2" />
+        <div class="produk-info">
+          <h3>Produk Beta</h3>
+          <p class="harga-produk">Rp 175.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p3/280/200" alt="Produk 3" />
+        <div class="produk-info">
+          <h3>Produk Gamma</h3>
+          <p class="harga-produk">Rp 320.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p4/280/200" alt="Produk 4" />
+        <div class="produk-info">
+          <h3>Produk Delta</h3>
+          <p class="harga-produk">Rp 95.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p5/280/200" alt="Produk 5" />
+        <div class="produk-info">
+          <h3>Produk Epsilon</h3>
+          <p class="harga-produk">Rp 450.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- soal 22 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 22</title>
+  <style>
+    .artikel-majalah{
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .drop-cap{
+      float: left;
+      font-size: 72px;
+      line-height: 0.8;
+      padding-right: 8px;
+      padding-top: 4px;
+      color: #e44d26;
+      font-weight: bold;
+    }
+    .artikel-konten{
+      line-height: 1.7;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .teks-multi-kolom{
+      column-count: 3;
+      column-gap: 24px;
+      column-rule: 1px solid #ddd;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .spoiler-tombol{
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #ecf0f1;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 15px;
+    }
+    .spoiler-konten{
+      display: none;
+    }
+    .spoiler:focus-within{
+      .spoiler-konten{
+        display: block;
+        background: #fff3cd;
+        padding: 16px;
+        border-radius: 6px;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1 class="judul-majalah">Mengenal Teknologi Web Modern</h1>
+
+  <p class="artikel-konten">
+    <span class="drop-cap">T</span>eknologi web telah berkembang pesat dalam satu dekade terakhir.
+    Dari HTML statis hingga aplikasi web yang kompleks, perjalanan ini dipenuhi
+    inovasi yang mengubah cara kita berinteraksi dengan internet setiap harinya.
+    CSS Layout seperti Flexbox dan Grid telah merevolusi cara developer membuat tampilan.
+    Kini membuat layout yang responsif jauh lebih mudah dibanding era float-based layout.
+    Media query memungkinkan satu halaman tampil sempurna di berbagai ukuran layar.
+  </p>
+
+  <div class="teks-multi-kolom">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum
+    primis in faucibus orci. Sed do eiusmod tempor incididunt ut labore et dolore magna.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+    Nullam dapibus fermentum ipsum. Maecenas aliquet accumsan leo. Vivamus condimentum.
+    Proin commodo diam. Pellentesque habitant morbi tristique senectus et netus malesuada.</p>
+  </div>
+
+  <div class="spoiler">
+    <button class="spoiler-tombol" tabindex="0">🔍 Klik untuk Lihat Fakta Menarik</button>
+    <div class="spoiler-konten">
+      <p>CSS pertama kali diusulkan oleh Håkon Wium Lie pada Oktober 1994.
+         Grid Layout baru menjadi standard browser pada tahun 2017.</p>
+    </div>
+  </div>
+</article>
+</body>
+</html>
+
+<!-- soal 23 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 23</title>
+  <style>
+    navbar{
+      display: flexbox;
+      position: sticky;
+      
+    }
+    hero{
+      height: 100vh;
+      background: linear-gradient(blue, green);
+    }
+    pricing{
+      transform: scale(1.05);
+      border: 1px solid black;
+    }
+    footer{
+      background: darkgray;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px){
+      
+    }
+  </style>
+</head>
+<body>
+  <navbar></navbar>
+  <hero></hero>
+  <feature></feature>
+  <pricing></pricing>
+  <footer></footer>
+</body>
+</html>
+
+<!-- soal 24 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soal 24</title>
+  <style>
+    .spinner{
+      border-radius: 50%;
+      height: 48px;
+      width: 48px;
+      border: 5px solid #e0e0e0;
+      border-top-color: steelblue;
+      transform: 0.8s;
+    }
+  </style>
+</head>
+<body>
+  <h2>Loading Spinner</h2>
+  <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    <p class="loading-teks">Memuat data...</p>
+  </div>
+  <hr>
+  <h2>Skeleton Screen</h2>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-img"></div>
+    <div class="skeleton-body">
+      <div class="skeleton skeleton-judul"></div>
+      <div class="skeleton skeleton-teks"></div>
+      <div class="skeleton skeleton-teks pendek"></div>
+    </div>
+  </div>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-img"></div>
+    <div class="skeleton-body">
+      <div class="skeleton skeleton-judul"></div>
+      <div class="skeleton skeleton-teks"></div>
+      <div class="skeleton skeleton-teks pendek"></div>
+    </div>
+  </div>
+</body>
+</html>
