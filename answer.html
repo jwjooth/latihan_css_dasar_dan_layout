@@ -1,0 +1,1939 @@
+<!-- soal 1 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 1</title>
+    <style>
+      #konten {
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      p {
+        font-size: 16px;
+        color: gray;
+      }
+      #konten p:hover {
+        color: navy;
+      }
+      .teks {
+        font-weight: bold;
+      }
+      #paragraf-utama {
+        color: crimson;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="konten" class="wrapper">
+      <p class="teks" id="paragraf-utama">Teks Satu</p>
+      <p class="teks">Teks Dua</p>
+      <p>Teks Tiga</p>
+    </div>
+  </body>
+</html>
+
+<!-- soal 2 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 2</title>
+    <style>
+      .kartu {
+        width: 300px;
+        padding: 20px;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        margin: 30px auto;
+        box-sizing: border-box;
+      }
+      .judul-kartu {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .harga {
+        display: block;
+        font-size: 18px;
+        color: #e44d26;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kartu">
+      <h2 class="judul-kartu">Produk Unggulan</h2>
+      <p class="deskripsi">Deskripsi singkat produk ini.</p>
+      <span class="harga">Rp 150.000</span>
+    </div>
+  </body>
+</html>
+
+<!-- soal 3 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 3</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      a[target="_blank"] {
+        color: steelblue;
+      }
+      a::after {
+        content: " ↗";
+      }
+      a[href^="mailto:"] {
+        color: green;
+      }
+      nav > ul > li {
+        padding: 8px 0;
+      }
+      span + ul {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      ul li > ul > li {
+        padding-left: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/home">Beranda</a></li>
+        <li><a href="/about">Tentang</a></li>
+        <li><a href="https://github.com/user" target="_blank">GitHub</a></li>
+        <li><a href="mailto:admin@mail.com">Email Admin</a></li>
+        <li>
+          <span>Dropdown</span>
+          <ul>
+            <li><a href="/sub1">Sub Menu 1</a></li>
+            <li><a href="/sub2">Sub Menu 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+<!-- soal 4 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 4</title>
+    <style>
+      article {
+        max-width: 680px;
+        margin: 40px auto;
+        font-family: "Merriweather", "Georgia", serif, serif;
+      }
+      h1 {
+        font-size: 32px;
+        color: #1a1a1a;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 22px;
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 6px;
+      }
+      .meta {
+        font-size: 13px;
+        color: #888;
+        font-style: italic;
+      }
+      p {
+        line-height: 1.8;
+        color: #444;
+      }
+      blockquote {
+        border-left: 4px solid #e44d26;
+        padding-left: 20px;
+        margin: 24px 0;
+        font-size: 18px;
+        color: #555;
+        font-style: italic;
+      }
+      .meta strong {
+        color: #333;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Judul Artikel Utama</h1>
+      <p class="meta">
+        Ditulis oleh <strong>Andi Saputra</strong> · 20 Februari 2026
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore.
+      </p>
+      <blockquote>
+        "Belajar CSS adalah investasi terbaik untuk seorang web developer."
+      </blockquote>
+      <p>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae.
+      </p>
+      <h2>Sub Judul Bagian</h2>
+      <p>Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum.</p>
+    </article>
+  </body>
+</html>
+
+<!-- soal 5 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 5</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100vh;
+        background-color: #1a1a2e;
+        background:
+          linear-gradient(rgba(26, 26, 46, 0.85), rgba(22, 33, 62, 0.85)),
+          url("https://picsum.photos/1920/1080");
+        background-size: cover;
+        background-position: center;
+      }
+      .hero-konten {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+      .hero h1 {
+        color: white;
+        font-size: 48px;
+      }
+      .tombol {
+        display: inline-block;
+        padding: 12px 32px;
+        background: #e44d26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .fitur {
+        background-color: #f8f8f8;
+        padding: 40px;
+      }
+      .fitur-item {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        display: inline-block;
+        width: calc(33.333% - 20px);
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <section class="hero">
+        <div class="hero-konten">
+          <h1>Selamat Datang</h1>
+          <p>Temukan pengalaman terbaik bersama kami.</p>
+          <a href="#" class="tombol">Mulai Sekarang</a>
+        </div>
+      </section>
+      <section class="fitur">
+        <div class="fitur-item">Fitur 1</div>
+        <div class="fitur-item">Fitur 2</div>
+        <div class="fitur-item">Fitur 3</div>
+      </section>
+    </body>
+  </body>
+</html>
+
+<!-- soal 6 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 6</title>
+    <style>
+      .daftar-artikel {
+        list-style: none;
+        padding: 0;
+        margin: 40px auto;
+        max-width: 500px;
+      }
+      li {
+        border-bottom: 1px solid #eee;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+      li:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+      a {
+        display: block;
+        padding: 14px 16px;
+        color: #333;
+        text-decoration: none;
+        transition: 0.2 ease;
+      }
+      a::before {
+        content: "▶ ";
+        color: #e44d26;
+      }
+      a:hover {
+        background: #fff3f0;
+        color: #e44d26;
+      }
+      a:focus {
+        outline: 2px solid steelblue;
+        outline-offset: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="daftar-artikel">
+      <li><a href="#">Cara Belajar CSS dengan Efektif</a></li>
+      <li><a href="#">Memahami Box Model Secara Mendalam</a></li>
+      <li><a href="#">Flexbox vs Grid: Kapan Menggunakan Keduanya</a></li>
+      <li><a href="#">Membuat Responsive Layout dengan Media Query</a></li>
+      <li><a href="#">Tips dan Trik CSS untuk Pemula</a></li>
+    </ul>
+  </body>
+</html>
+
+<!-- soal 7 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 7</title>
+    <style>
+      .form-registrasi {
+        max-width: 420px;
+        margin: 50px auto;
+        padding: 32px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      .form-grup {
+        margin-bottom: 16px;
+      }
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #555;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 15px;
+        box-sizing: border-box;
+        outline: none;
+      }
+      input,
+      select :focus {
+        border: 2px solid #4a90e2;
+        box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+      }
+      input:valid:not(:placeholder-shown) {
+        border: #27ae60;
+      }
+      input:invalid:not(:placeholder-shown) {
+        border: #e74c3c;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #357abd;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-registrasi">
+      <h2>Daftar Akun Baru</h2>
+
+      <div class="form-grup">
+        <label for="nama">Nama Lengkap</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama lengkap"
+          required
+          minlength="3"
+        />
+      </div>
+
+      <div class="form-grup">
+        <label for="email">Alamat Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="contoh@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-grup">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Minimal 8 karakter"
+          required
+          minlength="8"
+        />
+      </div>
+
+      <div class="form-grup">
+        <label for="peran">Peran</label>
+        <select id="peran" name="peran">
+          <option value="">-- Pilih Peran --</option>
+          <option value="mahasiswa">Mahasiswa</option>
+          <option value="dosen">Dosen</option>
+        </select>
+      </div>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </body>
+</html>
+
+<!-- soal 8 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 8</title>
+    <style>
+      .tabel-wrapper {
+        max-width: 700px;
+        margin: 40px auto;
+        overflow-x: auto;
+      }
+      .tabel-nilai {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px, 16px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      thead tr {
+        background-color: #2c3e50;
+        color: white;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+      tbody tr:hover {
+        background-color: #fff3cd;
+        transition: 0.15s;
+      }
+      td:last-child,
+      th:last-child {
+        text-align: center;
+      }
+      .grade-a {
+        color: #27ae60;
+        font-weight: bold;
+      }
+      .grade-d {
+        color: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabel-wrapper">
+      <h3>Laporan Nilai Mahasiswa</h3>
+      <table class="tabel-nilai">
+        <thead>
+          <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Mata Kuliah</th>
+            <th>Nilai UTS</th>
+            <th>Nilai UAS</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A001</td>
+            <td>Andi</td>
+            <td>CSS Dasar</td>
+            <td>85</td>
+            <td>90</td>
+            <td class="grade-a">A</td>
+          </tr>
+          <tr>
+            <td>A002</td>
+            <td>Bela</td>
+            <td>CSS Dasar</td>
+            <td>70</td>
+            <td>75</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>A003</td>
+            <td>Candra</td>
+            <td>CSS Dasar</td>
+            <td>60</td>
+            <td>65</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>A004</td>
+            <td>Dini</td>
+            <td>CSS Dasar</td>
+            <td>90</td>
+            <td>88</td>
+            <td class="grade-a">A</td>
+          </tr>
+          <tr>
+            <td>A005</td>
+            <td>Eka</td>
+            <td>CSS Dasar</td>
+            <td>55</td>
+            <td>58</td>
+            <td class="grade-d">D</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<!-- soal 9 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 9</title>
+    <style>
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      /* Reset bab */
+      .daftar-bab {
+        counter-reset: bab;
+      }
+
+      /* Increment bab */
+      .daftar-bab > li {
+        counter-increment: bab;
+        font-size: 17px;
+        margin-bottom: 16px;
+      }
+
+      /* Tampilkan bab */
+      .daftar-bab > li::before {
+        content: "Bab " counter(bab) " -- ";
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      /* Reset sub tiap bab */
+      .daftar-sub {
+        counter-reset: sub;
+      }
+
+      /* Increment sub */
+      .daftar-sub > li {
+        counter-increment: sub;
+        padding-left: 20px;
+        font-size: 15px;
+        color: #555;
+        margin-top: 6px;
+      }
+
+      /* Tampilkan bab.sub */
+      .daftar-sub > li::before {
+        content: counter(bab) "." counter(sub) " ";
+        font-weight: bold;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dokumentasi">
+      <h1>Panduan Instalasi</h1>
+      <ul class="daftar-bab">
+        <li>
+          Persiapan Sistem
+          <ul class="daftar-sub">
+            <li>Install Node.js</li>
+            <li>Install Git</li>
+            <li>Install VS Code</li>
+          </ul>
+        </li>
+        <li>
+          Konfigurasi Proyek
+          <ul class="daftar-sub">
+            <li>Buat folder proyek</li>
+            <li>Inisialisasi npm</li>
+          </ul>
+        </li>
+        <li>
+          Menjalankan Aplikasi
+          <ul class="daftar-sub">
+            <li>Jalankan server development</li>
+            <li>Buka browser</li>
+            <li>Verifikasi tampilan</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- soal 10 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 10</title>
+    <style>
+      .galeri {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        background: #1a1a1a;
+      }
+      .item-galeri {
+        display: inline-block;
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+        margin: 8px;
+        border-radius: 8px;
+      }
+      .item-galeri img {
+        display: block;
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 0.4s ease;
+      }
+      .overlay {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: 0.4s ease;
+        display: flex;
+      }
+      .item-galeri:hover {
+        img {
+          filter: grayscale(0%);
+          transform: scale(1.05);
+        }
+        .overlay {
+          opacity: 1;
+        }
+      }
+      .overlay p {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="galeri">
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/a/300/200" alt="Gambar 1" />
+        <div class="overlay">
+          <p>Foto Pertama</p>
+        </div>
+      </div>
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/b/300/200" alt="Gambar 2" />
+        <div class="overlay">
+          <p>Foto Kedua</p>
+        </div>
+      </div>
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/c/300/200" alt="Gambar 3" />
+        <div class="overlay">
+          <p>Foto Ketiga</p>
+        </div>
+      </div>
+      <div class="item-galeri">
+        <img src="https://picsum.photos/seed/d/300/200" alt="Gambar 4" />
+        <div class="overlay">
+          <p>Foto Keempat</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- soal 11 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 11</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .header-utama {
+        height: 4rem;
+        background: #2c3e50;
+        width: 100%;
+      }
+      .hero-section {
+        height: 80vh;
+        background: #ecf0f1;
+      }
+      .hero-section h1 {
+        font-size: 3rem;
+      }
+      .hero-section .tagline {
+        font-size: 1.25rem;
+      }
+      .konten-utama {
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .info-box {
+        font-size: 18px;
+      }
+      .teks-normal {
+        font-size: 1em;
+      }
+      .teks-besar {
+        font-size: 1.5em;
+      }
+      .teks-kecil {
+        font-size: 0.75em;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-utama">
+      <nav class="nav-bar">
+        <span class="logo">BelajarCSS</span>
+        <ul class="nav-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Kelas</a></li>
+          <li><a href="#">Tentang</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="konten-utama">
+      <section class="hero-section">
+        <h1>Belajar Web dengan Benar</h1>
+        <p class="tagline">Mulai perjalanan Anda hari ini.</p>
+      </section>
+      <section class="info-box">
+        <p class="teks-normal">Ini adalah teks dengan ukuran normal.</p>
+        <p class="teks-besar">
+          Ini adalah teks yang lebih besar dari induknya.
+        </p>
+        <p class="teks-kecil">
+          Ini adalah teks yang lebih kecil dari induknya.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- soal 12 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 12</title>
+    <style>
+      @layer base, komponen, utilitas;
+
+      @layer base {
+        .btn {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .card {
+          background: white;
+          border-radius: 8px;
+          padding: 20px;
+        }
+        .card-title {
+          color: navy;
+        }
+      }
+      @layer komponen {
+        .card-title {
+          color: crimson;
+          font-size: 20px;
+        }
+        .card {
+          background: #f5f5f5;
+        }
+        .btn {
+          background: gray;
+          color: black;
+        }
+      }
+      @layer utilitas {
+        .btn-primary {
+          background: steelblue;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2 class="card-title">Judul Kartu</h2>
+      <p class="card-body">Isi dari kartu ini.</p>
+      <button class="btn btn-primary">Tombol Utama</button>
+    </div>
+  </body>
+</html>
+
+<!-- soal 13 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 13</title>
+    <style>
+      .navbar {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        background: white;
+        padding: 0 48px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .navbar-menu {
+        margin: auto;
+      }
+      .navbar-menu a {
+        padding: 0 16px;
+        color: #555;
+        text-decoration: none;
+        font-size: 15px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+      }
+      .navbar-menu a:hover {
+        color: #e44d26;
+      }
+      .logo-teks {
+        font-size: 22px;
+        font-weight: 800;
+        color: #2c3e50;
+      }
+      .navbar-aksi {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .btn-masuk {
+        padding: 8px 20px;
+        color: #555;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .btn-daftar {
+        padding: 8px 20px;
+        background: #e44d26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      @media screen and (min-width: 768px) {
+        .navbar-menu {
+          display: none;
+        }
+        .navbar-brand {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-brand">
+        <span class="logo-teks">DevAcademy</span>
+      </div>
+      <nav class="navbar-menu">
+        <a href="#">Beranda</a>
+        <a href="#">Kelas</a>
+        <a href="#">Mentor</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="navbar-aksi">
+        <a href="#" class="btn-masuk">Masuk</a>
+        <a href="#" class="btn-daftar">Daftar Gratis</a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<!-- soal 14 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 14</title>
+    <style>
+      .kartu-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        padding: 0 40px;
+      }
+      .kartu-fitur {
+        flex: 1 1 220px;
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+      }
+      .kartu-link {
+        margin-top: auto;
+        display: inline-block;
+        padding: 8px 16px;
+        background: #e44d26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+        align-self: flex-start;
+      }
+      .kartu-fitur {
+        background: white;
+        border-radius: 12px;
+        padding: 28px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      }
+      .kartu-ikon {
+        size: 48px;
+        font-size: 32px;
+        margin-bottom: 16px;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 0, 0, 10px;
+        color: #2c3e50;
+      }
+      p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="fitur-section">
+      <h2 class="section-title">Fitur Unggulan</h2>
+      <div class="kartu-container">
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">🎓</div>
+          <h3>Belajar Fleksibel</h3>
+          <p>
+            Akses materi kapan saja dan di mana saja sesuai jadwal Anda tanpa
+            batas waktu.
+          </p>
+          <a href="#" class="kartu-link">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">👨‍💻</div>
+          <h3>Mentor Berpengalaman</h3>
+          <p>
+            Dibimbing oleh praktisi industri yang aktif bekerja di perusahaan
+            teknologi terkemuka di Indonesia.
+          </p>
+          <a href="#" class="kartu-link">Lihat Mentor</a>
+        </div>
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">🏆</div>
+          <h3>Sertifikat Resmi</h3>
+          <p>Dapatkan sertifikat.</p>
+          <a href="#" class="kartu-link">Info Sertifikat</a>
+        </div>
+        <div class="kartu-fitur">
+          <div class="kartu-ikon">💬</div>
+          <h3>Komunitas Aktif</h3>
+          <p>
+            Bergabung dengan ribuan pelajar aktif, diskusi, dan bantu satu sama
+            lain dalam forum eksklusif.
+          </p>
+          <a href="#" class="kartu-link">Gabung Komunitas</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- soal 15 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 15</title>
+    <style>
+      .dashboard {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        grid-template-rows: 64px 1fr 50px;
+        grid-template-areas:
+          "header header"
+          "sidebar konten"
+          "footer footer";
+        min-height: 100vh;
+      }
+      .db-header {
+        grid-area: header;
+        background: #2c3e50;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .db-sidebar {
+        grid-area: sidebar;
+        background: #34495e;
+        color: white;
+        padding: 20px;
+      }
+      .db-sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .db-sidebar li {
+        padding: 10px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .db-sidebar li :hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .db-footer {
+        grid-area: footer;
+        background: #2c3e50;
+        color: #aaa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+      }
+      .db-konten {
+        background: #ecf0f1;
+        padding: 24px;
+      }
+      .db-konten .widget {
+        grid: repeat(2, 1fr);
+        gap: 16px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="db-header">Header Dashboard</header>
+      <aside class="db-sidebar">
+        <nav>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="db-konten">
+        <div class="widget">Widget A</div>
+        <div class="widget">Widget B</div>
+        <div class="widget">Widget C</div>
+        <div class="widget">Widget D</div>
+      </main>
+      <footer class="db-footer">Footer Dashboard</footer>
+    </div>
+  </body>
+</html>
+
+<!-- soal 16 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 16</title>
+    <style>
+      .majalah {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 30px;
+        background: #f0f0f0;
+      }
+      .artikel.featured {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .artikel.wide {
+        grid-column: 1 / -1;
+      }
+      .artikel {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .artikel img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .artikel h2,
+      p {
+        padding: 0 16px;
+      }
+      h2 {
+        font-size: 16px;
+        margin: 12px 0 6px;
+      }
+      p {
+        font-size: 13px;
+        color: #666;
+      }
+      .artikel.featured img {
+        height: 280px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="majalah">
+      <article class="artikel featured">
+        <img src="https://picsum.photos/seed/m1/600/400" alt="" />
+        <h2>Artikel Utama: Revolusi AI di 2026</h2>
+        <p>
+          Kecerdasan buatan semakin mengubah cara kita bekerja dan belajar
+          setiap harinya.
+        </p>
+      </article>
+      <article class="artikel">
+        <img src="https://picsum.photos/seed/m2/300/200" alt="" />
+        <h2>Berita Teknologi</h2>
+        <p>Update terbaru dari dunia teknologi dan inovasi digital global.</p>
+      </article>
+      <article class="artikel">
+        <img src="https://picsum.photos/seed/m3/300/200" alt="" />
+        <h2>Tips Produktivitas</h2>
+        <p>
+          Cara efektif mengatur waktu dan meningkatkan produktivitas harian
+          Anda.
+        </p>
+      </article>
+      <article class="artikel wide">
+        <img src="https://picsum.photos/seed/m4/600/200" alt="" />
+        <h2>Laporan Khusus: Industri Kreatif Indonesia</h2>
+        <p>
+          Menelusuri pertumbuhan ekonomi kreatif dan potensi yang belum
+          tereksplor.
+        </p>
+      </article>
+      <article class="artikel">
+        <img src="https://picsum.photos/seed/m5/300/200" alt="" />
+        <h2>Review Gadget</h2>
+        <p>Ulasan mendalam produk teknologi terbaru untuk Anda.</p>
+      </article>
+    </div>
+  </body>
+</html>
+
+<!-- soal 17 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 17</title>
+    <style>
+      .overlay-modal {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-kotak {
+        background: white;
+        border-radius: 12px;
+        padding: 32px;
+        max-width: 480px;
+        width: 90%;
+        position: relative;
+      }
+      .modal-tutup {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn-konfirmasi {
+        padding: 10px 24px;
+        background: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .tooltip-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      .tooltip {
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: #2c3e50;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 13px;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      .tooltip-wrapper:hover {
+        .tooltip {
+          opacity: 1;
+        }
+      }
+      .tooltip::after {
+        content: " ↗";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid transparent;
+        border-top-color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div class="halaman-konten">
+        <h1>Halaman Utama</h1>
+        <p>Ini adalah konten halaman biasa.</p>
+
+        <div class="tooltip-wrapper">
+          <button class="btn-info">Hover untuk Info ℹ️</button>
+          <div class="tooltip">Ini adalah teks tooltip yang informatif!</div>
+        </div>
+
+        <button
+          class="btn-buka-modal"
+          onclick="document.getElementById('modal').style.display = 'flex'"
+        >
+          Buka Modal
+        </button>
+      </div>
+
+      <div class="overlay-modal" id="modal" style="display: none">
+        <div class="modal-kotak">
+          <button
+            class="modal-tutup"
+            onclick="document.getElementById('modal').style.display = 'none'"
+          >
+            ✕
+          </button>
+          <h2>Judul Modal</h2>
+          <p>
+            Ini adalah isi dari modal dialog. Konten di belakang modal harus
+            terlihat teredup.
+          </p>
+          <button class="btn-konfirmasi">Konfirmasi</button>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
+
+<!-- soal 18 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 18</title>
+    <style>
+      body {
+        margin: 0;
+        padding-top: 60px;
+      }
+      .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #2c3e50;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        z-index: 100;
+      }
+      .layout-artikel {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        gap: 40px;
+      }
+      .toc {
+        position: sticky;
+        top: 80px;
+        width: 220px;
+        flex-shrink: 0;
+        align-self: flex-start;
+        background: #f8f8f8;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .isi-artikel {
+        flex: 1;
+        min-width: 0;
+      }
+      .tombol-atas {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #e44d26;
+        color: white;
+        padding: 12px 16px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 99;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <header class="fixed-header">
+        <span>📚 Portal Belajar</span>
+      </header>
+
+      <div class="layout-artikel">
+        <aside class="toc">
+          <h3>Daftar Isi</h3>
+          <ul>
+            <li><a href="#bab1">1. Pengenalan</a></li>
+            <li><a href="#bab2">2. Konsep Dasar</a></li>
+            <li><a href="#bab3">3. Implementasi</a></li>
+            <li><a href="#bab4">4. Kesimpulan</a></li>
+          </ul>
+        </aside>
+
+        <article class="isi-artikel">
+          <h1 id="bab1">1. Pengenalan</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+
+          <h2 id="bab2">2. Konsep Dasar</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+
+          <h2 id="bab3">3. Implementasi</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+
+          <h2 id="bab4">4. Kesimpulan</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi
+            ullam odio esse nostrum vel necessitatibus officia vitae in
+            incidunt?
+          </p>
+        </article>
+      </div>
+
+      <a href="#" class="tombol-atas">↑ Atas</a>
+    </body>
+  </body>
+</html>
+
+<!-- soal 19 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 19</title>
+    <style>
+      .header-reps {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        background: #2c3e50;
+        color: white;
+        gap: 12px;
+      }
+      .nav-resp {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+      }
+      .kartu-resp-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+      }
+      .kartu-resp {
+        background: steelblue;
+        color: white;
+        padding: 24px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      @media screen and (min-width: 600px) {
+        .header-reps {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .nav-resp {
+          flex-direction: row;
+          gap: 20px;
+        }
+        .kartu-resp-wrapper {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .header-resp {
+          padding: 0 48px;
+          height: 64px;
+        }
+        .kartu-resp-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+          padding: 30px 48px;
+        }
+        .main-resp {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-resp">
+      <div class="brand">MyApp</div>
+      <nav class="nav-resp">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main class="main-resp">
+      <section class="konten-resp">
+        <h1>Responsive Design</h1>
+        <p>Halaman ini berubah layout tergantung ukuran layar.</p>
+      </section>
+      <section class="kartu-resp-wrapper">
+        <div class="kartu-resp">Kartu 1</div>
+        <div class="kartu-resp">Kartu 2</div>
+        <div class="kartu-resp">Kartu 3</div>
+        <div class="kartu-resp">Kartu 4</div>
+        <div class="kartu-resp">Kartu 5</div>
+        <div class="kartu-resp">Kartu 6</div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- soal 20 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 20</title>
+    <style>
+      .app-layout {
+        display: flex;
+        height: 400px;
+        gap: 16px;
+        padding: 20px;
+        background: #f0f0f0;
+      }
+      .sidebar-kiri {
+        flex: 0 0 200px;
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .konten-tengah {
+        flex: 1 1 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .sidebar-kanan {
+        flex: 0 1 160px;
+        background: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .progress-bar-demo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 20px;
+      }
+      .progress-label {
+        flex: 0 0 80px;
+        font-weight: bold;
+      }
+      .progress-track {
+        flex: 1;
+        height: 12px;
+        background: #ddd;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .progress-fill {
+        height: 100%;
+        width: var(--persen);
+        background: linear-gradient(to right, #27ae60, #2ecc71);
+        border-radius: 6px;
+      }
+      .progress-persen {
+        flex: 0 0 40px;
+        font-size: 13px;
+        color: #555;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar-kiri">
+        <h3>Sidebar Kiri</h3>
+        <p>Navigasi utama aplikasi.</p>
+      </aside>
+      <main class="konten-tengah">
+        <h2>Konten Utama</h2>
+        <p>Area ini harus mengambil seluruh sisa ruang yang tersedia.</p>
+      </main>
+      <aside class="sidebar-kanan">
+        <h3>Sidebar Kanan</h3>
+        <p>Widget dan informasi tambahan.</p>
+      </aside>
+    </div>
+
+    <hr />
+
+    <div class="progress-bar-demo">
+      <div class="progress-label">JavaScript</div>
+      <div class="progress-track">
+        <div class="progress-fill" style="--persen: 85%"></div>
+      </div>
+      <div class="progress-persen">85%</div>
+    </div>
+    <div class="progress-bar-demo">
+      <div class="progress-label">CSS</div>
+      <div class="progress-track">
+        <div class="progress-fill" style="--persen: 92%"></div>
+      </div>
+      <div class="progress-persen">92%</div>
+    </div>
+  </body>
+</html>
+
+<!-- soal 21 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 21</title>
+    <style>
+      .galeri-produk {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 24px;
+        padding: 30px;
+      }
+      .produk-item {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transform: 0.2s;
+        box-shadow: 0.2s;
+      }
+      .produk-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+      .produk-item img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .produk-info {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .produk-info h3 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+      .harga-produk {
+        color: #e44d26;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0 0 12px;
+      }
+      .produk-info button {
+        margin-top: auto;
+        padding: 10px;
+        width: 100%;
+        background: #2c3e50;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .produk-info button:hover {
+        background: #34495e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="galeri-produk">
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p1/280/200" alt="Produk 1" />
+        <div class="produk-info">
+          <h3>Produk Alpha</h3>
+          <p class="harga-produk">Rp 250.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p2/280/200" alt="Produk 2" />
+        <div class="produk-info">
+          <h3>Produk Beta</h3>
+          <p class="harga-produk">Rp 175.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p3/280/200" alt="Produk 3" />
+        <div class="produk-info">
+          <h3>Produk Gamma</h3>
+          <p class="harga-produk">Rp 320.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p4/280/200" alt="Produk 4" />
+        <div class="produk-info">
+          <h3>Produk Delta</h3>
+          <p class="harga-produk">Rp 95.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="produk-item">
+        <img src="https://picsum.photos/seed/p5/280/200" alt="Produk 5" />
+        <div class="produk-info">
+          <h3>Produk Epsilon</h3>
+          <p class="harga-produk">Rp 450.000</p>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- soal 22 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 22</title>
+  <style>
+    .artikel-majalah{
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .drop-cap{
+      float: left;
+      font-size: 72px;
+      line-height: 0.8;
+      padding-right: 8px;
+      padding-top: 4px;
+      color: #e44d26;
+      font-weight: bold;
+    }
+    .artikel-konten{
+      line-height: 1.7;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .teks-multi-kolom{
+      column-count: 3;
+      column-gap: 24px;
+      column-rule: 1px solid #ddd;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .spoiler-tombol{
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #ecf0f1;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 15px;
+    }
+    .spoiler-konten{
+      display: none;
+    }
+    .spoiler:focus-within{
+      .spoiler-konten{
+        display: block;
+        background: #fff3cd;
+        padding: 16px;
+        border-radius: 6px;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1 class="judul-majalah">Mengenal Teknologi Web Modern</h1>
+
+  <p class="artikel-konten">
+    <span class="drop-cap">T</span>eknologi web telah berkembang pesat dalam satu dekade terakhir.
+    Dari HTML statis hingga aplikasi web yang kompleks, perjalanan ini dipenuhi
+    inovasi yang mengubah cara kita berinteraksi dengan internet setiap harinya.
+    CSS Layout seperti Flexbox dan Grid telah merevolusi cara developer membuat tampilan.
+    Kini membuat layout yang responsif jauh lebih mudah dibanding era float-based layout.
+    Media query memungkinkan satu halaman tampil sempurna di berbagai ukuran layar.
+  </p>
+
+  <div class="teks-multi-kolom">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum
+    primis in faucibus orci. Sed do eiusmod tempor incididunt ut labore et dolore magna.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+    Nullam dapibus fermentum ipsum. Maecenas aliquet accumsan leo. Vivamus condimentum.
+    Proin commodo diam. Pellentesque habitant morbi tristique senectus et netus malesuada.</p>
+  </div>
+
+  <div class="spoiler">
+    <button class="spoiler-tombol" tabindex="0">🔍 Klik untuk Lihat Fakta Menarik</button>
+    <div class="spoiler-konten">
+      <p>CSS pertama kali diusulkan oleh Håkon Wium Lie pada Oktober 1994.
+         Grid Layout baru menjadi standard browser pada tahun 2017.</p>
+    </div>
+  </div>
+</article>
+</body>
+</html>
+
+<!-- soal 23 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 23</title>
+  <style>
+    navbar{
+      display: flexbox;
+      position: sticky;
+      
+    }
+    hero{
+      height: 100vh;
+      background: linear-gradient(blue, green);
+    }
+    pricing{
+      transform: scale(1.05);
+      border: 1px solid black;
+    }
+    footer{
+      background: darkgray;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px){
+      
+    }
+  </style>
+</head>
+<body>
+  <navbar></navbar>
+  <hero></hero>
+  <feature></feature>
+  <pricing></pricing>
+  <footer></footer>
+</body>
+</html>
+
+<!-- soal 24 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soal 24</title>
+  <style>
+    .spinner{
+      border-radius: 50%;
+      height: 48px;
+      width: 48px;
+      border: 5px solid #e0e0e0;
+      border-top-color: steelblue;
+      transform: 0.8s;
+    }
+  </style>
+</head>
+<body>
+  <h2>Loading Spinner</h2>
+  <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    <p class="loading-teks">Memuat data...</p>
+  </div>
+  <hr>
+  <h2>Skeleton Screen</h2>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-img"></div>
+    <div class="skeleton-body">
+      <div class="skeleton skeleton-judul"></div>
+      <div class="skeleton skeleton-teks"></div>
+      <div class="skeleton skeleton-teks pendek"></div>
+    </div>
+  </div>
+  <div class="skeleton-card">
+    <div class="skeleton skeleton-img"></div>
+    <div class="skeleton-body">
+      <div class="skeleton skeleton-judul"></div>
+      <div class="skeleton skeleton-teks"></div>
+      <div class="skeleton skeleton-teks pendek"></div>
+    </div>
+  </div>
+</body>
+</html>
